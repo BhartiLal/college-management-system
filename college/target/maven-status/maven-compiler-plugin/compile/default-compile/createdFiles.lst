@@ -1,0 +1,8 @@
+com\university\college\App.class
+com\university\college\repository\CollegeRepositoryImpl.class
+com\university\college\model\College.class
+com\university\college\repository\CollegeRepository.class
+com\university\college\controller\CollegeController.class
+com\university\college\model\Faculty.class
+com\university\college\model\Department.class
+com\university\college\service\CollegeService.class
