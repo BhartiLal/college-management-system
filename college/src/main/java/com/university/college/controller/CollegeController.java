@@ -1,5 +1,6 @@
 package com.university.college.controller;
 
+// Importing all the relevant libraries.
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -95,13 +96,14 @@ public class CollegeController {
 	public List<Faculty> getAllFacultyByDepartmentName(@PathVariable String facultyName) {
 		return collegeService.getAllFacultyByDepartmentName(facultyName);
 	}
-
+	
+	// Endpoint to addHod in college.
 	@RequestMapping(value = "/addHod", method = RequestMethod.PUT, headers = "Accept=application/json")
 	public void addHod(@PathVariable int deptId, String hodName) {
 		collegeService.addHOD(deptId, hodName);
 
 	}
-
+	//Endpoint to fecth the hod name.
 	@RequestMapping(value = "/getHodName/{id}", method = RequestMethod.GET, headers = "Accept=application/json")
 	public String getHodName(@PathVariable int id) {
 		return collegeService.getHodName(id);
